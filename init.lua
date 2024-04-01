@@ -274,6 +274,7 @@ require('lazy').setup({
           end
 
           map('gd', require('telescope.builtin').lsp_definitions, '[G]oto [D]efinition')
+          map('gv', ":vsplit | lua require('telescope.builtin').lsp_definitions <CR>", '[G]oto [D]efinition')
           map('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')
           map('gI', require('telescope.builtin').lsp_implementations, '[G]oto [I]mplementation')
           map('<leader>D', require('telescope.builtin').lsp_type_definitions, 'Type [D]efinition')
